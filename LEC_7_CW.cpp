@@ -209,3 +209,29 @@ int main()
     return 0;
 }*/
 
+/*PRINT 
+5 4 3 2 1 
+5 4 3 2 
+5 4 3 
+5 4 
+5 */
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+    int n = 1;
+    for(j=1;j<=5;j++)
+    {
+        for(i=5;i>=n;i=i-1)
+        {
+            cout<<i<<" ";
+        }
+        cout<<endl;
+        n = n + 1;
+    }
+    return 0;
+}
