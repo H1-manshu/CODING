@@ -186,3 +186,77 @@ int main()
 }
     */
 // Observe that n + k = L (constant) so k = (L - n) where L is the number of rows of pyramid.
+
+/*PRINT
+      1
+    2 2
+  3 3 3
+4 4 4 4  */
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+    int n = 1;
+    int k = 6;
+    for(j=1;j<=4;j++)
+    {
+        for(i=1;i<=k;i++)
+        {
+            cout<<" ";
+        }
+        for(i=1;i<=n;i++)
+        {
+            cout<<n<<" ";
+        }
+        cout<<endl;
+        k = k - 2;
+        n = n + 1;
+    }
+    return 0;
+}*/
+/*
+PRINT ( Constraint :   1<= input <=9 )
+Input: 3 (Take the input from the user:)
+Output:
+      1
+    2 2
+  3 3 3
+
+Input: 5 (Take the input from the user:)
+Output:
+        1
+      2 2
+    3 3 3
+  4 4 4 4
+5 5 5 5 5*/
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+    int n = 1;
+    int L;
+    cout<<"How many rowed triangle you want to print?\n: ";
+    cin>>L;
+    int k = 2*(L-1);
+    for (j=1;j<=L;j++)
+    {
+        for(i=1;i<=k;i++)
+        {
+            cout<<" ";
+        }
+        for(i=1;i<=n;i++)
+        {
+            cout<<n<<" ";
+        }
+        cout<<endl;
+        k = k - 2;
+        n = n + 1;
+    }
+    return 0 ;
+}
