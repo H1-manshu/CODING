@@ -233,6 +233,7 @@ Output:
   4 4 4 4
 5 5 5 5 5*/
 
+/*
 #include <iostream>
 using namespace std;
 int main()
@@ -260,3 +261,270 @@ int main()
     }
     return 0 ;
 }
+*/
+
+/*PRINT
+        1
+      1 2
+    1 2 3
+  1 2 3 4
+1 2 3 4 5 */
+
+/*#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+    int n  = 1;
+    int k = 8;
+    for(j=1;j<=5;j++)
+    {
+        for(i=1;i<=k;i++)
+        {
+            cout<<" ";
+        }
+        for(i=1;i<=n;i++)
+        {
+            cout<<i<<" ";
+        }
+        cout<<endl;
+        k = k - 2;
+        n = n + 1;
+    }
+    return 0;
+}*/
+
+/*Now take user input if it enters 5 then print
+        1
+      1 2
+    1 2 3
+  1 2 3 4
+1 2 3 4 5  */
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+    int n = 1;
+    int L;
+    cout<<"How many rowed triangle you want to print?\n: ";
+    cin>>L;
+    int k = 2*(L-1);
+    for(j=1;j<=L;j++)
+    {
+        for(i=1;i<=k;i++)
+        {
+            cout<<" ";
+        }
+        for(i=1;i<=n;i++)
+        {
+            cout<<i<<" ";
+        }
+        cout<<endl;
+        k = k - 2;
+        n = n + 1;
+    }
+    return 0;
+}
+*/
+
+/*PRINT 
+        A
+      A B
+    A B C
+  A B C D
+A B C D E */
+/*
+// Method 1:
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+    int n = 65;
+    int k = 8;
+    for(j=1;j<=5;j++)
+    {
+        for(i=1;i<=k;i++)
+        {
+            cout<<" ";
+        }
+        for(i=65;i<=n;i++)
+        {
+            cout<<char(i)<<" ";
+        }
+        cout<<endl;
+        k = k - 2;
+        n = n + 1;
+    }
+    return 0;
+}*/
+
+// Method 2:
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+    char n = 'A';
+    char m = 'A';
+    int k = 8;
+    for(j=1;j<=5;j++)
+    {
+        for(i=1;i<=k;i++)
+        {
+            cout<<" ";
+        }
+        for(n='A';n<=m;n++)
+        {
+            cout<<n<<" ";
+        }
+        cout<<endl;
+        k = k - 2;
+        m = m + 1;
+    }
+    return 0;
+}
+*/
+/*PRINT (Taking input from the user()How many rowed triangle you want to print?)
+        A
+      A B
+    A B C
+  A B C D
+A B C D E  */
+/*
+
+Method 1 ;
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+    int L;
+    int n = 65;
+    cout<<"How many rowed triangle you want to print?\n: ";
+    cin>>L;
+    int k = 2*(L-1);
+    for(j=1;j<=L;j++)
+    {
+        for(i=1;i<=k;i++)
+        {
+            cout<<" ";
+        }
+        for(i=65;i<=n;i++)
+        {
+            cout<<char(i)<<" ";
+        }
+        cout<<endl;
+        k = k - 2;
+        n = n + 1;
+    }
+    return 0;
+}
+*/
+
+// Method 2;
+/*#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+    int L;
+    char n = 'A';
+    char m = 'A';
+    cout<<"How many rowed triangle you want to print?\n: ";
+    cin>>L;
+    int k = 2*(L-1);
+    for(j=1;j<=L;j++)
+    {
+        for(i=1;i<=k;i++)
+        {
+            cout<<" ";
+        }
+        for(n='A';n<=m;n++)
+        {
+            cout<<n<<" ";
+        }
+        cout<<endl;
+        k = k - 2;
+        m = m + 1;
+    }
+    return 0;
+}*/
+
+/*PRINT
+        1
+      2 1
+    3 2 1
+  4 3 2 1
+5 4 3 2 1 */
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+    int k = 8;
+    int n = 1;
+    for(j=1;j<=5;j++)
+    {
+        for(i=1;i<=k;i++)
+        {
+            cout<<" ";
+        }
+        for(i=n;i>=1;i=i-1)
+        {
+            cout<<i<<" ";
+        }
+        cout<<endl;
+        k = k - 2;
+        n = n + 1;
+    }
+    return 0;
+}
+*/
+/*PRINT (By taking input from the user if the user enters 5 then print this:) 
+        1
+      2 1
+    3 2 1
+  4 3 2 1
+5 4 3 2 1 */
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+    int L;
+    int n = 1;
+    cout<<"How many rowed triangle you want to print?\n: ";
+    cin>>L;
+    int k = 2*(L-1);
+    for(j=1;j<=L;j++)
+    {
+        for(i=1;i<=k;i++)
+        {
+            cout<<" ";
+        }
+        for(i=n;i>=1;i=i-1)
+        {
+            cout<<i<<" ";
+        }
+        cout<<endl;
+        k = k - 2;
+        n = n + 1;
+    }
+    return 0;
+}*/
