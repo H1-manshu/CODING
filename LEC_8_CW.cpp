@@ -338,7 +338,7 @@ int main()
   A B C D
 A B C D E */
 /*
-// Method 1:
+// Method 1: (The ASCII Value / Type Casting Approach)
 
 #include <iostream>
 using namespace std;
@@ -365,7 +365,7 @@ int main()
     return 0;
 }*/
 
-// Method 2:
+// Method 2: (The Character Literal / Direct Manipulation Approach )
 /*
 #include <iostream>
 using namespace std;
@@ -528,3 +528,4 @@ int main()
     }
     return 0;
 }*/
+
