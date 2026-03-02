@@ -212,7 +212,7 @@ int main()
     return 0;
 }*/
 
-/*PRINT
+/*PRINT Inverted Pyramid
 *********
  *******
   *****
@@ -243,7 +243,7 @@ int main()
     return 0;
 }*/
 
-/*Print Pyramid ( n Rowed );
+/*Print Inverted Pyramid ( n Rowed );
 If user enters 5 then the output should be:
 *********
  *******
@@ -251,7 +251,7 @@ If user enters 5 then the output should be:
    ***
     *  */
 
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 int main()
 {
@@ -275,6 +275,272 @@ int main()
         cout<<endl;
         k = k + 1;
         n = n - 2;
+    }
+    return 0;
+}*/
+
+/*PRINT 
+* * * * * * * *
+* * *     * * *
+* *         * *
+*             *
+*             *
+* *         * *
+* * *     * * *
+* * * * * * * *
+
+********
+***  ***
+**    **
+*      *
+*      *
+**    **
+***  ***
+********
+*/
+/*PRINT
+********
+***  ***
+**    **
+*      *
+*      *
+**    **
+***  ***
+********
+*/
+/*#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+    int n = 4;
+    int k = 2;
+    int m;
+    int f = 1;
+    int g = 6;
+    for(j=1;j<=4;j++)
+    {
+        for(i=1;i<=n;i++)
+        {
+            cout<<"*";
+        }
+        for(i=k;i>=3;i=i-1)
+        {
+            cout<<" ";
+        }
+        for(i=n;i>=1;i=i-1)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+        n = n - 1;
+        k = k + 2;
+    }
+    for(m=1;m<=4;m++)
+    {
+        for(i=1;i<=f;i++)
+        {
+            cout<<"*";
+        }
+        for(i=1;i<=g;i++)
+        {
+            cout<<" ";
+        }
+        for(i=f;i>=1;i=i-1)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+        g = g - 2;
+        f = f + 1;
+    }
+    return 0;
+}
+*/
+/*PRINT
+* * * * * * * *
+* * *     * * *
+* *         * *
+*             *
+*             *
+* *         * *
+* * *     * * *
+* * * * * * * * */
+/*#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+    int n = 4;
+    int k = 2;
+    int m;
+    int f = 1;
+    int g = 6;
+    for(j=1;j<=4;j++)
+    {
+        for(i=1;i<=n;i++)
+        {
+            cout<<"* ";
+        }
+        for(i=k;i>=3;i=i-1)
+        {
+            cout<<"  ";
+        }
+        for(i=n;i>=1;i=i-1)
+        {
+            cout<<"* ";
+        }
+        cout<<endl;
+        n = n - 1;
+        k = k + 2;
+    }
+    for(m=1;m<=4;m++)
+    {
+        for(i=1;i<=f;i++)
+        {
+            cout<<"* ";
+        }
+        for(i=1;i<=g;i++)
+        {
+            cout<<"  ";
+        }
+        for(i=f;i>=1;i=i-1)
+        {
+            cout<<"* ";
+        }
+        cout<<endl;
+        g = g - 2;
+        f = f + 1;
+    }
+    return 0;
+}*/
+
+/*PRINT (By taking input, for eg: If I enter 4 then the program should print the below pattern)
+********
+***  ***
+**    **
+*      *
+*      *
+**    **
+***  ***
+********  */
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+    int L;
+    cout<<"How many symmetric rowed box you want to print?\n: ";
+    cin>>L;
+    int n = L;
+    int k = 2;
+    int m;
+    int f = 1;
+    int g = 2*(L-1);
+    for(j=1;j<=L;j++)
+    {
+        for(i=1;i<=n;i++)
+        {
+            cout<<"*";
+        }
+        for(i=k;i>=3;i=i-1)
+        {
+            cout<<" ";
+        }
+        for(i=n;i>=1;i=i-1)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+        n = n - 1;
+        k = k + 2;
+    }
+    for(m=1;m<=L;m++)
+    {
+        for(i=1;i<=f;i++)
+        {
+            cout<<"*";
+        }
+        for(i=1;i<=g;i++)
+        {
+            cout<<" ";
+        }
+        for(i=f;i>=1;i=i-1)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+        g = g - 2;
+        f = f + 1;
+    }
+    return 0;
+}
+*/
+
+/*PRINT (By taking input, for eg: If I enter 4 then the program should print the below pattern)
+
+* * * * * * * *
+* * *     * * *
+* *         * *
+*             *
+*             *
+* *         * *
+* * *     * * *
+* * * * * * * *  */
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+    int L;
+    cout<<"How many symmetric rowed box you want to print?\n: ";
+    cin>>L;
+    int n = L;
+    int k = 2;
+    int m;
+    int f = 1;
+    int g = 2*(L-1);
+    for(j=1;j<=L;j++)
+    {
+        for(i=1;i<=n;i++)
+        {
+            cout<<"* ";
+        }
+        for(i=k;i>=3;i=i-1)
+        {
+            cout<<"  ";
+        }
+        for(i=n;i>=1;i=i-1)
+        {
+            cout<<"* ";
+        }
+        cout<<endl;
+        n = n - 1;
+        k = k + 2;
+    }
+    for(m=1;m<=L;m++)
+    {
+        for(i=1;i<=f;i++)
+        {
+            cout<<"* ";
+        }
+        for(i=1;i<=g;i++)
+        {
+            cout<<"  ";
+        }
+        for(i=f;i>=1;i=i-1)
+        {
+            cout<<"* ";
+        }
+        cout<<endl;
+        g = g - 2;
+        f = f + 1;
     }
     return 0;
 }
