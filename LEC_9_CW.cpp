@@ -491,7 +491,7 @@ int main()
 * *         * *
 * * *     * * *
 * * * * * * * *  */
-
+/*
 #include <iostream>
 using namespace std;
 int main()
@@ -543,4 +543,248 @@ int main()
         f = f + 1;
     }
     return 0;
+}*/
+
+/*PRINT
+*      *
+**    **
+***  ***
+********
+***  ***
+**    **
+*      *  */
+
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+    int k = 6;
+    int n = 1;
+    int h = 3;
+    int f = 3;
+    for(j=1;j<=4;j++)
+    {
+        for(i=1;i<=n;i++)
+        {
+            cout<<"*";
+        }
+        for(i=k;i>=1;i=i-1)
+        {
+            cout<<" ";
+        }
+        for(i=n;i>=1;i=i-1)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+        n = n + 1;
+        k = k - 2;
+    }
+    for(int m=1;m<=3;m++)
+    {
+        for(i=h;i>=1;i=i-1)
+        {
+            cout<<"*";
+        }
+        for(i=f;i>=2;i=i-1)
+        {
+            cout<<" ";
+        }
+        for(i=h;i>=1;i=i-1)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+        f = f + 2;
+        h = h - 1;
+    }
+    return 0;
 }
+*/
+
+/*PRINT
+*             * 
+* *         * *
+* * *     * * *
+* * * * * * * *
+* * *     * * * 
+* *         * *
+*             * */
+/*
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+    int k = 6;
+    int n = 1;
+    int h = 3;
+    int f = 3;
+    for(j=1;j<=4;j++)
+    {
+        for(i=1;i<=n;i++)
+        {
+            cout<<"* ";
+        }
+        for(i=k;i>=1;i=i-1)
+        {
+            cout<<"  ";
+        }
+        for(i=n;i>=1;i=i-1)
+        {
+            cout<<"* ";
+        }
+        cout<<endl;
+        n = n + 1;
+        k = k - 2;
+    }
+    for(int m=1;m<=3;m++)
+    {
+        for(i=h;i>=1;i=i-1)
+        {
+            cout<<"* ";
+        }
+        for(i=f;i>=2;i=i-1)
+        {
+            cout<<"  ";
+        }
+        for(i=h;i>=1;i=i-1)
+        {
+            cout<<"* ";
+        }
+        cout<<endl;
+        f = f + 2;
+        h = h - 1;
+    }
+    return 0;
+}*/
+
+/*PRINT (By taking input from the user, if the user enters 4 then print below pattern)
+*      *
+**    **
+***  ***
+********
+***  ***
+**    **
+*      *  */
+
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+    int L;
+    cout<<"Enter the butterfly number\n: ";
+    cin>>L;
+    int k = 2*(L-1);
+    int n = 1;
+    int h = (L-1);
+    int f = 3;
+    for(j=1;j<=L;j++)
+    {
+        for(i=1;i<=n;i++)
+        {
+            cout<<"*";
+        }
+        for(i=k;i>=1;i=i-1)
+        {
+            cout<<" ";
+        }
+        for(i=n;i>=1;i=i-1)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+        n = n + 1;
+        k = k - 2;
+    }
+    for(int m=1;m<=(L-1);m++)
+    {
+        for(i=h;i>=1;i=i-1)
+        {
+            cout<<"*";
+        }
+        for(i=f;i>=2;i=i-1)
+        {
+            cout<<" ";
+        }
+        for(i=h;i>=1;i=i-1)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+        f = f + 2;
+        h = h - 1;
+    }
+    return 0;
+}
+*/
+
+/*PRINT
+   * 
+  * *
+ * * *
+* * * *
+* * * * 
+ * * *
+  * *
+   *    */
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+    int n = 1;
+    int k = 3;
+    int f = 4;
+    int h = 0;
+    for(j=1;j<=4;j++)
+    {
+        for(i=1;i<=k;i++)
+        {
+            cout<<" ";
+        }
+        for(i=1;i<=n;i++)
+        {
+            cout<<"* ";
+        }
+        cout<<endl;
+        k = k - 1;
+        n = n + 1;
+    }
+    for(j=1;j<=4;j++)
+    {
+        for(i=1;i<=h;i++)
+        {
+            cout<<" ";
+        }
+        for(i=1;i<=f;i++)
+        {
+            cout<<"* ";
+        }
+        cout<<endl;
+        h = h + 1;
+        f = f - 1;
+    }
+    return 0;
+}
+
+
+/*PRINT By taking input, if the user enters 4 then the below pattern must print)
+   * 
+  * *
+ * * *
+* * * *
+* * * * 
+ * * *
+  * *
+   *    */
