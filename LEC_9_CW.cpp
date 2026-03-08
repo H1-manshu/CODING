@@ -1145,7 +1145,7 @@ int main()
 ***  ***
 ********  */
 
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 int main()
 {
@@ -1193,6 +1193,66 @@ int main()
         cout<<endl;
         k = k - 2;
         n = n + 1;
+    }
+    return 0;
+}*/
+
+/*PRINT
+* * * * *
+* *   * *
+* *   * *
+* *   * *
+*       *
+* *   * * */
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int j;
+    for(i=1;i<=5;i++)
+    {
+        cout<<"* ";
+    }
+    cout<<endl;
+    for(j=1;j<=3;j++)
+    {
+        for(i=1;i<=1;i++)
+        {
+            cout<<"* *"<<"   "<<"* *"; 
+        }
+        cout<<endl;
+    }
+    for(j=1;j<=1;j++)
+    {
+        for(i=1;i<=1;i++)
+        {
+            cout<<"* ";
+        }
+        for(i=1;i<=2;i++)
+        {
+            cout<<" "<<"  ";
+        }
+        for(i=1;i<=1;i++)
+        {
+            cout<<"*";
+        }
+    }
+    cout<<endl;
+    for(j=1;j<=1;j++)
+    {
+        for(i=1;i<=2;i++)
+        {
+            cout<<"* ";
+        }
+        for(i=1;i<=1;i++)
+        {
+            cout<<"  ";
+        }
+        for(i=1;i<=2;i++)
+        {
+            cout<<"* ";
+        }
     }
     return 0;
 }
