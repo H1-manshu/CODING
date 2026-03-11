@@ -93,3 +93,35 @@ int main()
     cout<<"The number "<<n<<" is prime";
     return 0;
 }*/
+
+// Clean Code :
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    int n;
+    cout<<"Enter the number whose prime status you want to check\n: ";
+    cin>>n;
+    if(n==1)
+    {
+        cout<<"1 is neither prime nor composite";
+    }
+    if(n<=0)
+    {
+        cout<<"Non positive integers are not primes";
+    }
+    if (n>=2)
+    {
+    for(i=2;i<n;i++)
+    {
+        if(n%i == 0 )
+        {
+            cout<<"Number "<<n<<" is not a prime number";
+            return 0;
+        }
+    }
+    cout<<"Number "<<n<<" is a Prime number";
+    }
+    return 0;
+}
